@@ -17,10 +17,32 @@
         </encoder>
     </appender>
 
+<!--    <appender name="EMAIL" class="ch.qos.logback.classic.net.SMTPAppender">-->
+<!--        <smtpHost>smtp.office365.com</smtpHost>-->
+<!--        <smtpPort>587</smtpPort>-->
+<!--        <STARTTLS>true</STARTTLS>-->
+<!--        <asynchronousSending>false</asynchronousSending>-->
+<!--        <username>user@outlook.com</username>-->
+<!--        <password>*************</password>-->
+<!--        <to>user@outlook.com</to>-->
+<!--        <from>user@outlook.com</from>-->
+<!--        <subject>Testing %logger{20} - %m</subject>-->
+
+<!--        <layout class="ch.qos.logback.classic.PatternLayout">-->
+<!--            <pattern>%d{HH:mm:ss.SSS}-->
+
+<!--                [%thread] %-5level %logger{1} -%msg%n-->
+<!--            </pattern>-->
+<!--        </layout>-->
+<!--    </appender>-->
+
     <!-- Ajout nouveau logger avec level DEBUG écriture dans app.log-->
     <logger name="dev.service.AppService" level="DEBUG" additivity="false">
         <appender-ref ref="FILE" />
     </logger>
+<!--    <logger name="dev.service.AppService" level="DEBUG" additivity="false">-->
+<!--        <appender-ref ref="EMAIL" />-->
+<!--    </logger>-->
 
     <!-- regle de logs par defaut. Ici : niveau INFO vers la sortie standard -->
     <root level="INFO">

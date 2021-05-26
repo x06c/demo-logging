@@ -9,5 +9,6 @@ public class AppService {
 
     public void executer(String param) {
         LOG.debug("Traitement 1 : param = {}", param);
+        LOG.error("Traitement 1 : param = {}", param);
     }
 }

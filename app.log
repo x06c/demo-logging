@@ -1,3 +1,9 @@
 
 16:39:01.199 [main] DEBUG dev.service.AppService -
                 Traitement 1 : param = TEST_00
+17:34:46.319 [main] DEBUG dev.service.AppService -
+                Traitement 1 : param = TEST_00
+17:36:05.891 [main] DEBUG dev.service.AppService -
+                Traitement 1 : param = TEST_00
+17:40:38.648 [main] DEBUG dev.service.AppService -
+                Traitement 1 : param = TEST_00
