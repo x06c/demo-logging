@@ -83,6 +83,17 @@ public class TestPersonne {
         Personne.CtrlCodePostal(cpAlphaNum);
     }
 
+    /**
+     * Test du Setter à value Null
+     */
+    @Test
+    public void testSetterNull() {
+        p.setNom(null);
+        p.setVille(null);
+        assertNull(p.getNom());
+        assertNull(p.getVille());
+    }
+
 
 
 
